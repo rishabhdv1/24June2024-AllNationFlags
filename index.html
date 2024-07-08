@@ -5,16 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>All Country Flags</title>
         <style>
-            .myFlag {
-                width: 600px;
-                height: 400px;
-                margin: 150px auto;
+            .flag {
+                width: 400px;
+                height: 250px;
+                display: inline-block;
+                margin: 10px;
                 box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-                background: url("./img/1.png") center/250px no-repeat, -webkit-linear-gradient(left, red 25%, white 25%, white 75%, red 25%);
+            }
+            .canada {
+                background: url("./img/1.png") center/200px no-repeat, -webkit-linear-gradient(left, red 25%, white 25%, white 75%, red 75%);
+            }
+            .usa {
+                position: relative;
+                background: -webkit-repeating-linear-gradient(top,#B22234 0%, #B22234 7.7%, white 7.7%, white 15.4%);
+            }
+            .box {
+                position: absolute;
+                width: 195px;
+                height: 135px;
+                background: url(./img/star.png) top/100% no-repeat;
+            }
+            .russia {
+                background: -webkit-linear-gradient(top, white 33.33%, blue 33.33%, blue 66.66%, red 66.66%);
+            }
+            .japan {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .japan > div {
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                background: red;
+                
             }
         </style>
     </head>
     <body>
-        <div class="myFlag"></div>
+        <div class="flag canada"></div>
+        <div class="flag usa">
+            <div class="box"></div>
+        </div>
+        <div class="flag russia"></div>
+        <div class="flag japan">
+            <div></div>
+        </div>
     </body>
 </html>
